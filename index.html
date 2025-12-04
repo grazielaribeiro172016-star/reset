@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESET</title>
+    
+    <!-- SEO & Compartilhamento (WhatsApp/Facebook) -->
+    <meta name="description" content="Você não desiste. Você reinicia. Desbloqueie foco, força e sua próxima ação imediata em 2 minutos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reset.inspiroo.com.br/">
+    <meta property="og:title" content="RESET. Protocolo de Reinicialização Mental">
+    <meta property="og:description" content="Você não desiste. Você reinicia. Desbloqueie foco, força e sua próxima ação imediata em 2 minutos.">
+    <meta property="og:image" content="https://placehold.co/1200x630/000000/ffffff/png?text=RESET.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://reset.inspiroo.com.br/">
+    <meta property="twitter:title" content="RESET. Protocolo de Reinicialização Mental">
+    <meta property="twitter:description" content="Você não desiste. Você reinicia. Desbloqueie foco, força e sua próxima ação imediata em 2 minutos.">
+    <meta property="twitter:image" content="https://placehold.co/1200x630/000000/ffffff/png?text=RESET.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'reset-black': '#000000',
+              'reset-dark': '#0a0a0a',
+              'reset-gray': '#1a1a1a',
+              'reset-accent': '#ffffff',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.6s ease-out',
+              'slide-up': 'slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .input-minimal {
+        background: transparent;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        transition: border-color 0.3s ease;
+      }
+      .input-minimal:focus {
+        border-color: #ffffff;
+        outline: none;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333333; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555555; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
